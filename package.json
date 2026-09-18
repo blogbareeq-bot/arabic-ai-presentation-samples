@@ -1,0 +1,18 @@
+{
+  "name": "arabic-ai-presentation-samples",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Public download repository for the approved Arabic AI PowerPoint sample decks.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node tools/selftest.mjs",
+    "verify": "node tools/pptx-bundle.mjs verify",
+    "verify:strict": "node tools/pptx-bundle.mjs verify --strict",
+    "manifest": "node tools/pptx-bundle.mjs manifest",
+    "manifest:check": "node tools/pptx-bundle.mjs manifest --check",
+    "import": "node tools/import-bundle.mjs"
+  }
+}

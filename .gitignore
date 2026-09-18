@@ -1,0 +1,11 @@
+# ملفات مؤقتة للنظام والمحررين
+node_modules/
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# أقفال Office / LibreOffice أثناء فتح الملفات
+~$*.pptx
+~$*.pptx~
+.~lock.*
