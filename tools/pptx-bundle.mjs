@@ -350,6 +350,7 @@ async function readJsonIfExists(file) {
 }
 
 function sumsText(files) {
+  if (!files.length) return '';
   return `${files.map((file) => `${file.sha256}  ${file.path}`).join('\n')}\n`;
 }
 
