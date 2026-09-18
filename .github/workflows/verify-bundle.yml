@@ -23,6 +23,9 @@ jobs:
         with:
           node-version: '22'
 
+      - name: Self-test the verifier and importer
+        run: node tools/selftest.mjs
+
       - name: Verify every deck and its checksums
         run: node tools/pptx-bundle.mjs verify
 

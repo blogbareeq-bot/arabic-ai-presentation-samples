@@ -8,9 +8,11 @@
     "node": ">=20"
   },
   "scripts": {
+    "test": "node tools/selftest.mjs",
     "verify": "node tools/pptx-bundle.mjs verify",
     "verify:strict": "node tools/pptx-bundle.mjs verify --strict",
     "manifest": "node tools/pptx-bundle.mjs manifest",
-    "manifest:check": "node tools/pptx-bundle.mjs manifest --check"
+    "manifest:check": "node tools/pptx-bundle.mjs manifest --check",
+    "import": "node tools/import-bundle.mjs"
   }
 }
